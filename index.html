@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sirius ONG — grupo de serviço comunitário que distribui alimentos e acolhimento nas ruas de Campinas toda sexta-feira à noite.">
+  <title>Sirius ONG — Serviço Comunitário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="nav__brand">
+        <img src="assets/logo.png" alt="Sirius ONG" class="nav__logo">
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#routes">Rotas</a></li>
+        <li><a href="#team">Equipe</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li>
+          <button type="button" class="btn btn--donate" data-donate-open>
+            Doar
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Boas-vindas">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <img src="assets/logo.png" alt="" class="hero__logo" aria-hidden="true">
+        <p class="hero__eyebrow">Toda sexta · 19h – 22h · Campinas</p>
+        <h1 class="hero__title">Sirius</h1>
+        <p class="hero__tagline">Por um mundo melhor — comida, acolhimento e conexão humana nas ruas.</p>
+        <a href="#about" class="btn btn--primary">Conheça Nossa Missão</a>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section section--mission" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Nossa Missão</span>
+          <h2>Seja a luz que alguém precisa numa sexta à noite</h2>
+        </div>
+        <div class="mission__grid">
+          <div class="mission__text">
+            <p class="mission__lead">
+              A Sirius é um grupo de serviço comunitário que vai às ruas toda sexta-feira — das 18h ou 19h até as 22h — levando comida, café e conversa de verdade para quem mais precisa em Campinas.
+            </p>
+            <p>
+              Nos dividimos em duas equipes e seguimos duas rotas diferentes, entregando pão com presunto, café quente e algo tão importante quanto: nosso tempo. Semana após semana, encontramos rostos familiares que viraram parte da nossa tradição de sexta. Escutamos. Conhecemos histórias. Aparecemos — sempre.
+            </p>
+            <p>
+              Nossas camisetas laranja e azul não são só estilo — são para que as pessoas nos vejam no escuro da noite. Essa visibilidade significa confiança, segurança e saber que ajuda está por perto.
+            </p>
+            <div class="mission__cta">
+              <p class="mission__join">Você não precisa de experiência. Só precisa de um coração disposto a aparecer.</p>
+              <a href="#contact" class="btn btn--primary">Junte-se a Nós na Próxima Sexta</a>
+            </div>
+          </div>
+          <div class="mission__stats">
+            <div class="stat-card">
+              <span class="stat-card__number">2</span>
+              <span class="stat-card__label">Rotas toda sexta</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">4h</span>
+              <span class="stat-card__label">Nas ruas cada noite</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">∞</span>
+              <span class="stat-card__label">Conversas que importam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Slider -->
+    <section class="section section--gallery" id="gallery">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Em Ação</span>
+          <h2>Sextas nas ruas de Campinas</h2>
+          <p class="section__subtitle">Preparar os lanches, ir às ruas e estar com quem precisa — sexta após sexta.</p>
+        </div>
+      </div>
+
+      <div class="slider" aria-label="Galeria de fotos" aria-live="polite">
+        <div class="slider__track">
+          <figure class="slide slide--active">
+            <img class="slide__bg" src="assets/images/Image-1.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-1.jpg" alt="Pessoa descansando na rua à noite" loading="lazy">
+            <figcaption>Chegar perto de quem passa a noite na rua</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-2.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-2.jpg" alt="Voluntário conversando com alguém sentado na calçada" loading="lazy">
+            <figcaption>Acolher é parar, ouvir e ficar</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-15.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-15.jpg" alt="Equipe Sirius reunida com camisetas laranja" loading="lazy">
+            <figcaption>Por um mundo melhor — juntos, toda sexta</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-4.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-4.jpg" alt="Pães com presunto preparados para distribuição" loading="lazy">
+            <figcaption>Pão com presunto, café quente e presença</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-5.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-5.jpg" alt="Voluntários montando lanches na mesa" loading="lazy">
+            <figcaption>Antes das ruas, a cozinha vira missão</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-6.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-6.jpg" alt="Equipe sorrindo durante a saída noturna" loading="lazy">
+            <figcaption>Sorrisos no meio do caminho</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-7.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-7.jpg" alt="Voluntária cumprimentando alguém na calçada" loading="lazy">
+            <figcaption>Um aperto de mão que muda a noite</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-8.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-8.jpg" alt="Voluntárias levando alimento nas calçadas" loading="lazy">
+            <figcaption>Entrega nas calçadas de Campinas</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-9.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-9.jpg" alt="Porta-malas com lanches e bebidas prontos para a rota" loading="lazy">
+            <figcaption>O porta-malas cheio, o coração também</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-10.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-10.jpg" alt="Voluntário servindo suco na rua" loading="lazy">
+            <figcaption>Água, suco e conversa — o básico que aquece</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-11.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-11.jpg" alt="Voluntárias da Sirius Ong conversando na calçada" loading="lazy">
+            <figcaption>Laranja na noite para que nos encontrem</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-12.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-12.jpg" alt="Abraço entre voluntário e alguém na rua" loading="lazy">
+            <figcaption>Às vezes o que mais falta é um abraço</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-13.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-13.jpg" alt="Voluntárias conversando com pessoa deitada na calçada" loading="lazy">
+            <figcaption>Chegamos perto. Sem pressa</figcaption>
+          </figure>
+          <figure class="slide">
+            <img class="slide__bg" src="assets/images/Image-14.jpg" alt="" aria-hidden="true">
+            <img class="slide__photo" src="assets/images/Image-14.jpg" alt="Equipe preparando lanches juntas e sorrindo" loading="lazy">
+            <figcaption>Mãos na massa, antes de sair para as ruas</figcaption>
+          </figure>
+        </div>
+
+        <button class="slider__btn slider__btn--prev" aria-label="Foto anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="slider__btn slider__btn--next" aria-label="Próxima foto">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+
+        <div class="slider__dots" role="tablist" aria-label="Navegação da galeria"></div>
+      </div>
+    </section>
+
+    <!-- Routes -->
+    <section class="section section--routes" id="routes">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Nossas Rotas</span>
+          <h2>Onde vamos toda sexta</h2>
+          <p class="section__subtitle">
+            Se você está nas ruas e procura por nós — ou quer se juntar a uma rota — é aqui que passamos.
+          </p>
+        </div>
+        <div class="route-map">
+          <div class="route-map__frame">
+            <img src="assets/map.png" alt="Mapa das rotas de distribuição da Sirius" class="route-map__image" loading="lazy">
+            <div class="route-map__placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              <p>Mapa da rota em breve</p>
+              <span>Envie a imagem do mapa quando estiver pronta</span>
+            </div>
+          </div>
+          <div class="route-map__info">
+            <div class="route-card">
+              <span class="route-card__badge route-card__badge--orange">Rota A</span>
+              <h3>Equipe Um</h3>
+              <p>Uma das nossas duas rotas de sexta à noite pelas ruas de Campinas.</p>
+            </div>
+            <div class="route-card">
+              <span class="route-card__badge route-card__badge--blue">Rota B</span>
+              <h3>Equipe Dois</h3>
+              <p>Nossa segunda rota em paralelo. Mesma missão, ruas diferentes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team / Leaders -->
+    <section class="section section--team" id="team">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Liderança</span>
+          <h2>Quem está por trás da Sirius</h2>
+        </div>
+        <div class="team__grid">
+          <article class="leader-card">
+            <div class="leader-card__photo">
+              <img src="assets/team/Joao.png" alt="João — líder da Sirius ONG" loading="lazy">
+            </div>
+            <div class="leader-card__info">
+              <h3>João</h3>
+              <p class="leader-card__role">Fundador &amp; Líder</p>
+              <p class="leader-card__bio">
+                João lidera a Sirius com uma crença simples: aparecer toda sexta muda vidas — inclusive a sua. Semana após semana, ele está nas ruas de Campinas com a equipe, distribuindo comida e construindo laços com quem mais precisa.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__intro">
+            <span class="section__label">Participe</span>
+            <h2>Pronto para se juntar a nós na próxima sexta?</h2>
+            <p>
+              Quer ser voluntário, saber mais ou simplesmente dizer olá — adoraríamos ouvir de você. Cada par de mãos faz diferença.
+            </p>
+          </div>
+          <div class="contact__details">
+            <div class="contact-item">
+              <span class="contact-item__label">Quando</span>
+              <span class="contact-item__value">Toda sexta, 19h às 22h</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__label">Onde</span>
+              <span class="contact-item__value">Ruas de Campinas, SP</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__label">Instagram</span>
+              <a href="https://www.instagram.com/sirius_ong?stkn=Y2lhNHR6aWVlZTVq" target="_blank" rel="noopener noreferrer" class="contact-item__value contact-item__link" id="instagram-link">@sirius.ong — atualizar link</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__label">Doar</span>
+              <button type="button" class="contact-item__value contact-item__link contact-item__button" data-donate-open>
+                Pix — ajude a próxima sexta
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">Sirius ONG</span>
+        <p>Serviço comunitário, toda sexta à noite.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="#about">Sobre</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#routes">Rotas</a>
+        <a href="#team">Equipe</a>
+        <a href="#contact">Contato</a>
+        <button type="button" class="footer__donate" data-donate-open>Doar via Pix</button>
+      </nav>
+      <p class="footer__copy">&copy; <span id="year"></span> Sirius ONG. Feito com carinho pela nossa comunidade.</p>
+    </div>
+  </footer>
+
+  <div class="donate-modal" id="donate-modal" hidden>
+    <div class="donate-modal__backdrop" data-donate-close></div>
+    <div class="donate-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="donate-title" tabindex="-1">
+      <button type="button" class="donate-modal__close" data-donate-close aria-label="Fechar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <span class="section__label">Doação</span>
+      <h2 id="donate-title">Apoie a Sirius via Pix</h2>
+      <p class="donate-modal__lead">
+        Escolha um valor. Depois escaneie o QR Code no app do banco ou copie o Pix. O pagamento vai direto para a chave da ONG.
+      </p>
+
+      <form id="donate-form" class="donate-form">
+        <fieldset class="donate-form__amounts">
+          <legend>Valor</legend>
+          <label class="donate-chip">
+            <input type="radio" name="donate-amount" value="10">
+            <span>R$ 10</span>
+          </label>
+          <label class="donate-chip">
+            <input type="radio" name="donate-amount" value="25" id="donate-amount-25" checked>
+            <span>R$ 25</span>
+          </label>
+          <label class="donate-chip">
+            <input type="radio" name="donate-amount" value="50">
+            <span>R$ 50</span>
+          </label>
+          <label class="donate-chip">
+            <input type="radio" name="donate-amount" value="100">
+            <span>R$ 100</span>
+          </label>
+          <label class="donate-chip donate-chip--custom">
+            <input type="radio" name="donate-amount" value="custom">
+            <span>Outro</span>
+          </label>
+        </fieldset>
+
+        <label class="donate-field">
+          <span>Valor personalizado (R$)</span>
+          <input type="text" inputmode="decimal" id="donate-custom-amount" name="custom-amount" placeholder="Ex.: 40,00" autocomplete="off">
+        </label>
+
+        <label class="donate-field">
+          <span>Seu nome (opcional)</span>
+          <input type="text" id="donate-name" name="donor-name" maxlength="40" placeholder="Como quer aparecer na descrição">
+        </label>
+
+        <label class="donate-field">
+          <span>Mensagem (opcional)</span>
+          <input type="text" id="donate-note" name="donor-note" maxlength="40" placeholder="Ex.: café da sexta">
+        </label>
+
+        <p class="donate-form__error" hidden></p>
+        <button type="submit" class="btn btn--primary donate-form__submit">Gerar Pix</button>
+      </form>
+
+      <p class="donate-config-warning" id="donate-config-warning" hidden>
+        A chave Pix ainda não foi configurada. Abra <code>js/pix.js</code> e cole a chave no campo comentado.
+      </p>
+
+      <div class="donate-result" id="donate-result" hidden>
+        <p class="donate-result__amount">Doação de <strong id="donate-amount-label"></strong></p>
+        <div class="donate-result__qr" id="donate-qr" aria-hidden="true"></div>
+        <p class="donate-result__hint">Abra o app do seu banco, escolha Pix e leia o QR Code.</p>
+
+        <label class="donate-field">
+          <span>Pix copia e cola</span>
+          <textarea id="donate-payload" rows="4" readonly></textarea>
+        </label>
+        <div class="donate-result__actions">
+          <button type="button" class="btn btn--donate" id="donate-copy-payload">Copiar Pix</button>
+          <button type="button" class="btn btn--ghost" id="donate-copy-key">Copiar chave</button>
+          <button type="button" class="btn btn--ghost" id="donate-reset">Outro valor</button>
+        </div>
+        <p class="donate-result__key">Chave Pix: <span id="donate-key-hint"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pix.js"></script>
+</body>
+</html>
