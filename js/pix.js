@@ -1,19 +1,12 @@
 (function () {
   "use strict";
 
-  /**
-   * Configuração do Pix da Sirius ONG.
-   * Substitua os valores comentados pela chave da organização.
-   */
   const PIX_CONFIG = {
-    // Cole aqui a chave Pix que receberá as doações.
-    // Pode ser CPF, CNPJ, e-mail, celular (ex.: +5519999999999) ou chave aleatória.
+  
     key: "19981428362",
 
-    // Nome do recebedor no QR (máx. 25 caracteres, sem acentos se o banco reclamar)
     merchantName: "SIRIUS ONG",
 
-    // Cidade do recebedor (máx. 15 caracteres)
     merchantCity: "CAMPINAS",
   };
 
@@ -128,6 +121,26 @@
   }
 
   const modal = document.getElementById("donate-modal");
+  
+  function registrarIntencao(valor) {
+    const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeO_TvAFlRKfgmPxMwxx6ds6BB4rY1yYHbEvYKIfx7wASH1Ig/formResponse";
+    
+    const ENTRY_VALOR = "entry.1996160979";
+    const ENTRY_NOME = "entry.1550438879";
+
+    const nome = (document.querySelector("#donate-name").value || "Anônimo").trim();
+
+    const formData = new FormData();
+    formData.append(ENTRY_VALOR, valor);
+    formData.append(ENTRY_NOME, nome);
+
+    fetch(FORM_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: formData
+    }).catch(() => {});
+  }
+
   if (!modal) return;
 
   const openers = document.querySelectorAll("[data-donate-open]");
@@ -249,6 +262,7 @@
     }
     error.hidden = true;
     showResult(amount);
+    registrarIntencao(amount)
   });
 
   copyPayloadBtn.addEventListener("click", () => {
