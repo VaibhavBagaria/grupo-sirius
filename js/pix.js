@@ -174,6 +174,9 @@
     modal.hidden = false;
     document.body.classList.add("donate-open");
     modal.querySelector(".donate-modal__dialog").focus();
+
+    result.hidden = true;
+    form.hidden = false;
   }
 
   function closeModal() {
@@ -217,6 +220,7 @@
   function showResult(amount) {
     if (!isPixConfigured()) {
       configWarning.hidden = false;
+      form.hidden = true;
       result.hidden = true;
       return;
     }
@@ -277,6 +281,7 @@
 
   resetBtn.addEventListener("click", () => {
     result.hidden = true;
+    form.hidden = false;
     lastPayload = "";
     qrHost.innerHTML = "";
     form.querySelector("#donate-amount-25").checked = true;
