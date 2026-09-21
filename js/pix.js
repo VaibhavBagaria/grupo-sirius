@@ -220,7 +220,6 @@
   function showResult(amount) {
     if (!isPixConfigured()) {
       configWarning.hidden = false;
-      form.hidden = true;
       result.hidden = true;
       return;
     }
@@ -234,6 +233,7 @@
     amountLabel.textContent = formatBRL(amount);
     payloadField.value = lastPayload;
     keyHint.textContent = PIX_CONFIG.key;
+    form.hidden = true;
     result.hidden = false;
     renderQr(lastPayload);
     result.scrollIntoView({ behavior: "smooth", block: "nearest" });
